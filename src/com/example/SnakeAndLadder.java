@@ -9,6 +9,7 @@ public class SnakeAndLadder {
 			int play = (int) (3*Math.random());
 			System.out.println("player position : "+pos);
 			System.out.println("die: "+die);
+			
 		
 				if (play==0) {
 					System.out.println("No Play");
@@ -29,6 +30,7 @@ public class SnakeAndLadder {
 				}
 			}
 		System.out.println("Player final position : "+pos);
+		
 
 	}
 }
