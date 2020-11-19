@@ -3,13 +3,13 @@ package com.example;
 public class SnakeAndLadder {
 	public static void main(String[] args) {
 		System.out.println("Snake And Ladder Problem");
-		int pos = 0;
+		int pos = 0, count = 0;
 		while(pos<=100) {
 			int die = ((int) (6*Math.random()))+1;
 			int play = (int) (3*Math.random());
 			System.out.println("player position : "+pos);
 			System.out.println("die: "+die);
-			
+			count++;
 		
 				if (play==0) {
 					System.out.println("No Play");
@@ -30,7 +30,6 @@ public class SnakeAndLadder {
 				}
 			}
 		System.out.println("Player final position : "+pos);
-		
-
+		System.out.println("Number of times die rolled was : "+count);
 	}
 }
